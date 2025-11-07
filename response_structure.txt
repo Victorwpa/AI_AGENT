@@ -1,0 +1,86 @@
+ChatCompletion(id='chatcmpl-CZ5f7b3KjrT1GGi0LsPMe0bt9DNMk', 
+choices=[
+    Choice(finish_reason='stop',
+     index=0,
+      logprobs=None,
+       message=ChatCompletionMessage(
+        content='Aqui vai um panorama direto, em português, sobre o sistema de pouso da Starship 
+        e as especificações dos motores Raptor (principalmente as versões atuais).
+        \n\nSistema de pouso da Starship (visão geral)
+        \n- Modo de pouso: propulsivo. A Starship pousa na Vertical (VTOL) 
+        usando motores Raptor no próprio estágio superior (Starship/“Ship”) para diminuir a
+         velocidade e tocar o chão com controle ativo de atitude.\n- Configuração de motores 
+         para pouso: tipicamente a Ship utiliza três motores Raptor (versão otimizada para vácuo) 
+         para a fase de descida e aterrissagem. Essa configuração oferece redundância: mesmo com a 
+         falha de um motor, ainda há propulsão suficiente para pousar.\n- Controle de atitude durante a 
+         descida: a nave usa guinadores (gimbals) nos motores para ajustar a orientação, combinados com 
+         superfícies de controle aerodinâmico (grid fins) durante a reentrada na atmosfera. Os grid fins 
+         ajudam a orientar a Starship em velocidades subídidas e durante aproximações finais.\
+         n- Legos de pouso: no final da aterrissagem, quatro pernas retráteis se estendem para absorver 
+         o impacto e suportar o peso da nave no solo.\n- Sequência de pouso típica: decolagem/ineficiência
+         , deorbit burn (quando aplicável), reentrada com orientação por grid fins, descida com manobras
+          de attitude control usando os Raptors, e o pouso final com o/burn de aterrissagem controlado, 
+          seguido pelo apoio definitivo com as pernas.\n- Redundância e flexibilidade: a capacidade de 
+          usar 1, 2 ou 3 motores Raptor durante a fase de pouso oferece redundância operacional.
+           Além disso, o motor é projetado para reiniciar várias vezes, o que facilita diferentes
+            “manobras de aproximação” e cenários de pouso.\n\nEspecificações dos motores Raptor 
+            (foco nas versões atuais)\n- Propulsores: metano (CH4) e oxigênio líquido (LOX).\
+            n- Ciclo de combustível: ciclo de combustão em fluxo total com estágio (full-flow staged 
+            combustion). Esse ciclo é um dos mais avançados para motores orbital, buscando alta 
+            eficiência, ignições múltiplas e reutilização.\n- Versões principais:\n  - 
+            Raptor (versão original) e Raptor Vacuum (Raptor V) — a versão de vácuo é otimizada 
+            para operação no espaço/altas altitudes, com plafon de expansão maior para melhor 
+            eficiência no vácuo.\n  - Raptor 2 (e variantes subsequentes) — melhorias de confiabilidade, 
+            repetibilidade de reignições, menor peso, maior vida útil e desempenho geral.
+            \n- Propulsão por motor (aproximações típicas, variam por versão):
+            n  - Empuxo: aproximadamente 1,6 a 2,0 MN no nível do mar para motores Raptor,
+             e próximo de 2,0 MN ou mais em versão vacuum. Em geral, o Raptor Vacuum tem empuxo 
+             maior que o Raptor de uso em condições atmosféricas.\n  - Isp (impulso específico): 
+             no é passado o Isp tende a ficar na faixa de ~330-360 s em condições de nível e aumenta
+              para cerca de 360-380 s em ambiente de vácuo. Versões mais novas tendem a melhorar a
+               performance de Isp, especialmente em operações no vácuo.\n- Capacidade de reignição:
+                projetados para reiniciar várias vezes, incluindo reinícios durante a subida, manobras 
+                de descida e etapas de aproximação. Isso é crucial para o pouso controlado e para missões 
+                com várias manobras de motor.\n- Gimbal (direção do empuxo): gimbal operacional para 
+                inclinação de alguns graus (varia por versão; tipicamente na faixa de algum grupo de 
+                dezenas de graus). Isso permite controle de atitude sem necessidade de lemes aerodinâmicos
+                 grandes em alta velocidade.\n- Faixa de throttling: motor capaz de variação de empuxo ao
+                  longo de uma ampla faixa, para permitir descidas suaves, ajustes finos de altitude e 
+                  manobras de aproximação com estabilidade.\n- Material e construção: nozzle (bocal) e 
+                  gás de escape projetados para suportar temperaturas extremas e ciclos de reutilização;
+                   design para reusabilidade com possibilidade de inspeção rápida entre voos.
+                   \n- Reutilização e ciclo de vida: os Raptors são desenhados para reutilização 
+                   repetida com reparos mínimos entre voos; SpaceX trabalha para reduzir o tempo 
+                   de turnaround e aumentar a resistência a ciclos de ignição/reignição em missões
+                    repetidas.\n- Variantes de aplicação: Raptor Vacuum é o favorito para o estágio 
+                    superior (Starship) por ter melhor eficiência no vácuo; Raptor (ou versões com 
+                    menor expansão) é mais comum para fases que operam próximo à atmosfera.\
+                    n\nNotas úteis\n- A Starship utiliza uma combinação de três Raptors na Ship 
+                    para as fases de descida/aterrissagem, com a possibilidade de ajuste de configuração 
+                    conforme o cenário da missão (p. ex., uso de menos motores em algumas situações, 
+                    se necessário).\n- O booster Super Heavy (parte de decolagem) usa um conjunto muito
+                     maior de Raptors (até dezenas de unidades) para impulsionamento inicial, 
+                     com estratégias de retorno e pouso separadas.\n- Os números exatos de empuxo, 
+                     Isp e outros parâmetros podem variar entre as versões 
+                     (Raptor, Raptor Vacuum, Raptor 2) e ao longo de atualizações de design.
+                      Se desejar, eu posso compilar as especificações mais recentes por variante 
+                      (Raptor 2 Vacuum vs. Raptor 2 Sea Level, por exemplo) com números atualizados.
+                      \n\nSe quiser, eu posso organizar as informações em um quadro comparativo rápido 
+                      (Raptor vs Raptor Vacuum vs Raptor 2) com os números mais recentes que estiverem 
+                      disponíveis para você.',
+                       refusal=None, 
+                       role='assistant', 
+                       annotations=[], 
+                       audio=None, 
+                       function_call=None, 
+                       tool_calls=None))],
+                        created=1762479281,
+                         model='gpt-5-nano-2025-08-07', 
+                         object='chat.completion',
+                          service_tier='default', 
+                          system_fingerprint=None, 
+                          usage=CompletionUsage(completion_tokens=8167,
+                           prompt_tokens=26, total_tokens=8193, 
+                           completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=0,
+                            audio_tokens=0, reasoning_tokens=6912, rejected_prediction_tokens=0), 
+                            prompt_tokens_details=PromptTokensDetails(audio_tokens=0, cached_tokens=0)))

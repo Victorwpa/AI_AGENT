@@ -1,0 +1,8 @@
+database:
+  host: localhost
+  port: 5432
+  user: meu_usuario
+  password: senha_super_secreta
+  name: meu_banco
+app:
+  set_response_strem: False
