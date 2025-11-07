@@ -14,25 +14,25 @@ SECRET_KEY = os.getenv("API_KEY") #recuperando a chave da api de um dotenv
 client = OpenAI(
     api_key=SECRET_KEY
 )
+
 stream_type = config["app"]["set_response_strem"]
-
-
-# print(stream_type)
 
 # Para retornar um stream
 stream = client.chat.completions.create(
     model = 'gpt-5-nano', #define qual modelo da OpenAI será usado
     messages = [
-        {'role':'system','content':'você é um engenheiro aeroespacial especialista em propulsao, fale tecnicamente'}
-        ,{'role':'user',
-         'content':'Sobre o motor raptor fale sobre sua construção, com foco em engenharia de materiais'}
+        {
+            'role':'system',
+            'content':'você é um engenheiro aeroespacial especialista em propulsao, fale tecnicamente'
+        },
+        {'role':'user',
+         'content':'Sobre o motor raptor fale sobre sua construção, com foco em engenharia de materiais'
+         }
     ], # seta que é um usuario passando a mensgem x
     stream=stream_type, # Parametro para liberar o streaming de responses, ao invés de esperar apenas um bloco 
     max_completion_tokens=5000 # configurando o máximo de tokens a serem usados nessa requisição
 
 )
-# print(response)
-# print(response.choices[0].message.content)
 
 
 for chunk in stream:

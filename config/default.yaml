@@ -5,4 +5,4 @@ database:
   password: senha_super_secreta
   name: meu_banco
 app:
-  set_response_strem: False
+  set_response_strem: True
