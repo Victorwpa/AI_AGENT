@@ -17,7 +17,8 @@ client = OpenAI(
 
 img = client.images.generate(
     model="dall-e-3",
-    prompt="Um biscoito tomando água",
+    # prompt="Um biscoito tomando água",
+    prompt="One cookie python developer writing matrix code, be futuristic",
     n=1,
     size="1024x1024",
     quality='standard'
