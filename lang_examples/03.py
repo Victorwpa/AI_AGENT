@@ -23,7 +23,7 @@ set_llm_cache(
     SQLiteCache(database_path='openai_cache.db')
 )
 
-prompt = 'Fale uma curiosidade sobre engenharia aeroespacial'
+prompt = 'Fale uma curiosidade atual sobre engenharia aeroespacial'
 
 response1 = model.invoke([
     SystemMessage(content = 'Você é um engenheiro aeroespacial sr com 40 anos de experiencia na indústria'),
