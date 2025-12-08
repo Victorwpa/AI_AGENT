@@ -14,7 +14,7 @@ os.environ['OPENAI_API_KEY'] = SECRET_KEY
 model = OpenAI()
 
 response= model.invoke(
-    input='me conte uma piada sobre engenharia aeroespacial',
+    input='Quem venceu a copa libertadores em 2025?',
     temperature = 1,
     max_tokens = 600,
 )

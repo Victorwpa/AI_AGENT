@@ -20,10 +20,25 @@ prompot_template = PromptTemplate.from_template(
     'Me fale sobre o foguete {rocket}'
 )
 
-runnable_sequence = prompot_template | model | StrOutputParser()
+# runnable_sequence = prompot_template | model | StrOutputParser()
+
+# rocket = input('Escolha o modelo de foguete a ser pesquisado: ')
+# response = runnable_sequence.invoke(
+#     {'rocket':rocket}
+# )
+
+# print(response)
+
+chain = (
+    PromptTemplate.from_template(
+    'Me fale sobre o foguete {rocket}'
+    )
+    |model
+    |StrOutputParser()
+)
 
 rocket = input('Escolha o modelo de foguete a ser pesquisado: ')
-response = runnable_sequence.invoke(
+response = chain.invoke(
     {'rocket':rocket}
 )
 
