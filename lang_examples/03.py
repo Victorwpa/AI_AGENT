@@ -23,10 +23,15 @@ set_llm_cache(
     SQLiteCache(database_path='openai_cache.db')
 )
 
-prompt = 'Fale uma curiosidade atual sobre engenharia aeroespacial'
+prompt = '''Estou estudando LLMs e cheguei na parte de RAG e embedding. Irei dar ao modelo de embedding um .pdf
+ para que seja processado e vetorizado para que o modelo utilize futuramente para fornecer resultados.
+ Sugira tres temas de fácil acesso (ex: guias, manuais, artigos) para que eu crie o meu primeiro vector database.
+   Eu gosto de 
+ Industria aeroespacial, tecnologia e curiosidades.
+'''
 
 response1 = model.invoke([
-    SystemMessage(content = 'Você é um engenheiro aeroespacial sr com 40 anos de experiencia na indústria'),
+    SystemMessage(content = 'Você é um professor de engenharia de dados. Responda com temas especificos de nível introdutorio, para engajar o aluno'),
     HumanMessage(content= prompt)
     ],
                             temperature = 1.2,
